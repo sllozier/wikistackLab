@@ -8,5 +8,7 @@ app.use(express.urlencoded({extended: false}));
 app.get('/', (req, res) => {
     console.log('Hello World!');
 })
-
+app.get('/', (req, res)=>{
+    res.send('<h1>Hello World</h1>')
+})
 app.listen(3000);
